@@ -285,20 +285,20 @@
 # decorator_maker --> actual_decorator --> wrapper --> function
 
 
-def bold(func):
-    def wrapper():
-        return "<b>" + func() + "<b>"
-    return wrapper
+# def bold(func):
+#     def wrapper():
+#         return "<b>" + func() + "<b>"
+#     return wrapper
 
-def italic(func):
-    def wrapper():
-        return "<i>" + func() + "</i>"
-    return wrapper
+# def italic(func):
+#     def wrapper():
+#         return "<i>" + func() + "</i>"
+#     return wrapper
 
 
-@italic
-@bold
-def greet():
-    return "Hellow !!!"
+# @italic
+# @bold
+# def greet():
+#     return "Hellow !!!"
 
-print(greet())
+# print(greet())
