@@ -204,3 +204,101 @@
 #     print("Hello, world!")
 
 # say_hello()
+
+
+
+
+# 
+# Decorators with arguments
+# 
+
+
+# What if your original function takes arguments?
+
+
+# def decorator_function(original_function):
+#     def wrapper_function(*args, **kwargs):
+#         print("before")
+#         original_function(*args, **kwargs)
+#         print("after")
+#     return wrapper_function
+
+
+# @decorator_function
+# def greet(name):
+#     print(f"Hellow, {name} !!!")
+    
+
+# greet("Anokhi")
+
+
+# @decorator_function is shortcut
+
+# greet = decorator_function(greet)
+
+# print(greet)
+
+
+
+# Real-life Example: Authorization Check
+# Imagine you have a website and some pages should be accessed only by logged-in users.
+
+# Instead of adding login checks in every function, you can just decorate it!
+
+
+# def login_required(func):
+#     def wrapper(*args, **kwargs):
+#         user_logged_in = True #suppose we checked user status
+        
+#         if user_logged_in:
+#             return func(*args, **kwargs)
+#         else:
+#             print("for access this page login okay !!!")
+#     return wrapper
+
+# @login_required
+# def view_profile():
+#     print("here is your awsome profile !!!")
+    
+    
+# view_profile()
+
+
+# def repeat(n):
+#     def decorator(func):
+#         def wrapper(*args, **kwargs):
+#             for _ in range(n):
+#                 func(*args, **kwargs)
+#         return wrapper
+#     return decorator
+
+# @repeat(3)
+# def say_hellow():
+#     print("hellow beautiful world !!!")
+
+
+# say_hellow()
+
+
+# Simple formula to remember:
+
+# decorator_maker --> actual_decorator --> wrapper --> function
+
+
+def bold(func):
+    def wrapper():
+        return "<b>" + func() + "<b>"
+    return wrapper
+
+def italic(func):
+    def wrapper():
+        return "<i>" + func() + "</i>"
+    return wrapper
+
+
+@italic
+@bold
+def greet():
+    return "Hellow !!!"
+
+print(greet())
