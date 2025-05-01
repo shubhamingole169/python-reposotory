@@ -1,0 +1,16 @@
+
+
+
+Create virtual environment (in project folder):
+
+python -m venv venv
+
+for activate it
+
+venv\Scripts\activate
+
+
+deactivate
+
+deactivate
+
