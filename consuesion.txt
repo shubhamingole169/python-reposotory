@@ -13,3 +13,7 @@ Python Classes Advanced
    Working with Data Structures
    - Stacks, Queues, Linked Lists (can be built manually).
    - Implementing and understanding algorithms for searching and sorting
+
+
+   **Regular Expressions**
+   - Pattern matching, searching, and replacing using `re` module.
