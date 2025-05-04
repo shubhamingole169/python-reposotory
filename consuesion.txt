@@ -1,0 +1,15 @@
+Iterators and Iterables
+   - The `iter()` and `next()` functions.
+   - Custom iterators and iterable classes.
+
+
+Python Classes Advanced
+   - Class Methods and Static Methods (`@classmethod`, `@staticmethod`).
+   - **Abstract Base Classes (ABC)** for enforcing interfaces.
+   - **Multiple Inheritance** and resolving conflicts with `super()`.
+   - **Polymorphism** and method overloading
+
+
+   Working with Data Structures
+   - Stacks, Queues, Linked Lists (can be built manually).
+   - Implementing and understanding algorithms for searching and sorting
